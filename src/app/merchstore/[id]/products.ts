@@ -14,6 +14,13 @@ export const products = [
         salePrice: 17.99,
         deliveryDays: 3,
         tag: "Bestseller",
+        features: [
+            "120 Seiten kariertes Papier",
+            "Integriertes Geheimfach",
+            "Recycling-Papier",
+            "Inspirierende Zitate",
+            "Spiralbindung für einfaches Umblättern"
+        ]
     },
     {
         id: 2357188438,
@@ -30,6 +37,13 @@ export const products = [
         salePrice: 49.99,
         deliveryDays: 3,
         tag: "Neuheit",
+        features: [
+            "80% Bio-Baumwolle, 20% recyceltes Polyester",
+            "Extra große Kapuze",
+            "Versteckte Innentasche",
+            "Kängurutasche vorne",
+            "Maschinenwaschbar bei 30°C"
+        ]
     },
     {
         id: 2747018438,
@@ -46,6 +60,13 @@ export const products = [
         salePrice: 9.99,
         deliveryDays: 2,
         tag: "Limitiert",
+        features: [
+            "6 verschiedene Designs",
+            "Hochwertiges Metall",
+            "Sichere Verschlussnadel",
+            "Durchmesser: 3,2 cm",
+            "Handgefertigt"
+        ]
     },
     {
         id: 3747018438,
@@ -62,6 +83,13 @@ export const products = [
         salePrice: 14.99,
         deliveryDays: 2,
         tag: "Witzig",
+        features: [
+            "400ml Fassungsvermögen",
+            "Spülmaschinenfest",
+            "Hochwertige Keramik",
+            "Microwellengeeignet",
+            "BPA-frei"
+        ]
     },
     {
         id: 4747018438,
@@ -77,5 +105,36 @@ export const products = [
         salePrice: 24.99,
         deliveryDays: 2,
         tag: "Praktisch",
+        features: [
+            "2 Liter Fassungsvermögen",
+            "Edelstahl (18/8)",
+            "Doppelwandig isoliert",
+            "Strohhalm-Verschluss",
+            "BPA-frei"
+        ]
+    },
+    {
+        id: 5747018438,
+        title: "Schulstreik-T-Shirt",
+        longDescription: "Unser ikonisches T-Shirt mit dem Aufdruck 'Streik statt Schule'. Perfekt für Proteste, Freitage und jeden Tag, an dem du das System herausfordern willst. Aus 100% fair gehandelter Bio-Baumwolle - weil auch Revolutionen nachhaltig sein sollten. Mit speziellem 'Unsichtbarer Aufdruck'-Design, das nur unter Schwarzlicht sichtbar wird!",
+        images: [
+            "/merchImages/tshirt/mens-premium-cotton-t-shirt-black-front-67ed4d115062d.png",
+            "/merchImages/tshirt/mens-premium-cotton-t-shirt-black-back-67ed4d1150f49.png",
+            "/merchImages/tshirt/mens-premium-cotton-t-shirt-black-front-67ed4d114fcd3.png",
+            "/merchImages/tshirt/mens-premium-cotton-t-shirt-black-front-67ed4d115062d.png",
+            "/merchImages/tshirt/mens-premium-cotton-t-shirt-black-front-67ed4d1150309.png",
+            "/merchImages/tshirt/mens-premium-cotton-t-shirt-black-right-front-67ed4d1150985.png"
+        ],
+        price: 27.99,
+        salePrice: 22.99,
+        deliveryDays: 3,
+        tag: "Neuheit",
+        features: [
+            "100% Bio-Baumwolle",
+            "Spezialfarbe unter Schwarzlicht",
+            "Unisex-Schnitt",
+            "Maschinenwaschbar bis 40°C",
+            "Fairtrade-zertifiziert"
+        ]
     }
 ];

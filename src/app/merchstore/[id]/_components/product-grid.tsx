@@ -1,41 +1,58 @@
+// product-grid.tsx
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 interface ProductGridProps {
     product: any;
     selectedImage: number;
     setSelectedImage: (index: number) => void;
 }
-export function ProductGrid({ product, selectedImage, setSelectedImage }: ProductGridProps ) {
+
+export function ProductGrid({ product, selectedImage, setSelectedImage }: ProductGridProps) {
     return (
-        <div>
-            <div className="rounded-lg border-2 border-gray-200 overflow-hidden mb-4">
+        <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            className="sticky top-4"
+        >
+            {/* Main Image */}
+            <div className="rounded-xl overflow-hidden border-2 border-gray-700/50 mb-6 relative group">
                 <Image
                     src={product.images[selectedImage]}
                     alt={product.title}
-                    width={600}
-                    height={600}
-                    className="w-full h-auto object-cover"
+                    width={800}
+                    height={800}
+                    className="w-full h-auto aspect-square object-cover group-hover:scale-105 transition-transform duration-500"
                     priority
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             </div>
 
-            <div className="grid grid-cols-4 gap-2">
+            {/* Thumbnails */}
+            <div className="grid grid-cols-4 gap-3">
                 {product.images.map((img: string, index: number) => (
-                    <button
+                    <motion.button
                         key={index}
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
                         onClick={() => setSelectedImage(index)}
-                        className={`rounded border-2 ${selectedImage === index ? 'border-blue-500' : 'border-gray-200'}`}
+                        className={`rounded-lg overflow-hidden border-2 transition-all ${
+                            selectedImage === index
+                                ? 'border-red-500 shadow-lg shadow-red-500/20'
+                                : 'border-gray-700 hover:border-gray-600'
+                        }`}
                     >
                         <Image
                             src={img}
                             alt={`${product.title} thumbnail ${index}`}
-                            width={100}
-                            height={100}
-                            className="w-full h-20 object-cover"
+                            width={200}
+                            height={200}
+                            className="w-full h-20 md:h-24 object-cover"
                         />
-                    </button>
+                    </motion.button>
                 ))}
             </div>
-        </div>
+        </motion.div>
     );
 }

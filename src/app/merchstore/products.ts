@@ -48,7 +48,7 @@ export const products = [
         id: 5747018438,
         title: "Schulstreik-T-Shirt",
         description: "100% Bio-Baumwolle, 0% Hausaufgaben. Motiv: 'Ich bin hier freiwillig... sagte nie jemand'",
-        imageUrl: "/merchImages/tshirt/basic-t-shirt-white-front-67ed3b0b3a041.png",
+        imageUrl: "/merchImages/tshirt/mens-premium-cotton-t-shirt-black-front-67ed4d115062d.png",
         price: 27.99,
         salePrice: 22.99,
         tag: "Neuheit",

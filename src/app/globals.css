@@ -120,3 +120,41 @@
     @apply bg-background text-foreground;
   }
 }
+.chalkboard {
+  background: linear-gradient(
+          to bottom,
+          #1a3a1a 0%,
+          #2a5a2a 25%,
+          #1a3a1a 50%,
+          #0a2a0a 75%,
+          #001a00 100%
+  );
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.rebel-title {
+  color: #ff4d4d;
+  text-shadow:
+          3px 3px 0 #000,
+          -1px -1px 0 #000,
+          1px -1px 0 #000,
+          -1px 1px 0 #000,
+          1px 1px 0 #000;
+  font-family: 'Bungee', cursive;
+}
+.subtitle {
+  color: #fff;
+  text-shadow:
+          2px 2px 0 #ff4d4d;
+  font-family: 'Permanent Marker', cursive;
+}
+.content {
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+}
+.cta-button {
+  box-shadow:
+          0 4px 0 #8b0000,
+          0 0 20px rgba(255, 77, 77, 0.5);
+  font-family: 'Bungee', cursive;
+  letter-spacing: 1px;
+}
